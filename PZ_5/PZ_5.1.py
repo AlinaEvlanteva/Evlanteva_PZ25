@@ -6,12 +6,12 @@
 # A и B, C и вывести новые значения A,B,C,D.
 import random
 def chislo ():
-    return random.randint(1000, 9999)  # Генерируем случайное четырехзначное число
+    return random.randint(1000, 9999)
 def proverka (number):
     digits = [int(d) for d in str(number)]  # Преобразуем число в список цифр
     return len(set(digits)) != len(digits)  # Проверяем, есть ли одинаковые цифры
 
-                                                # Генерируем число и проверяем наличие одинаковых цифр
+
 number = chislo ()
 print("Сгенерированное число:", number)
 if proverka (number):
