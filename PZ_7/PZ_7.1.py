@@ -9,9 +9,9 @@ def alternating_characters(n, c1, c2):
         result += c1 + c2
 
     return result
-
-N = 10
+import random
+N = random.randint(0, 999)
 C1 = 'A'
 C2 = 'B'
-print(alternating_characters(N, C1, C2))  # Output: 'ABABABABAB'
+print(alternating_characters(N, C1, C2))
 

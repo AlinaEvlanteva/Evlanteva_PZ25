@@ -17,7 +17,6 @@ def closest_point(points, x, y):
             closest = point
     return closest
 
-# Пример использования
 points_set = [(1, 2), (3, 4), (5, 6), (7, 8)]
 point_B = (4, 5)
 closest = closest_point(points_set, point_B[0], point_B[1])
