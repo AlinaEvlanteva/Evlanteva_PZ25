@@ -9,7 +9,7 @@ text = file18.read()
 print("Содержимое файла 'text18-9.txt':")
 print(text)
 
-lower_case = sum(1 for char in text if char.islower())
+lower_case = sum(1 for low in text if low.islower())
 print('\nКоличество букв в нижнем регистре:', lower_case)
 file18.close()
 
