@@ -5,15 +5,10 @@
 #Количество элементов:
 #Индекс максимального элемента:
 #Меняем местами первую и последнюю трети:
-file_ = open('PZ11/text_.txt', 'w')
+file_ = open('PZ11/text.txt', 'w')
 num = 5, 10, 11, -7, -10, -4
 file_.write(str(num))
 file_.close()
-
-file = open('PZ11/text.txt', 'w')
-numbers = 5, 10, 11, -7, -10, -4
-file.write(str(numbers))
-file.close()
 
 file = open('PZ11/text.txt', 'r')
 data = file.read()
@@ -27,6 +22,19 @@ swap = elements[-delenie_treti:] + elements[delenie_treti:-delenie_treti] + elem
 print('Меняем местами первую и последнюю трети:', swap)
 file.close()
 
+file = open('PZ11/text_.txt', 'w')
+numbers = 5, 10, 11, -7, -10, -4
+file.write('Содержимое текстового файла (исходные данные):', )
+file.write("Исходные данные:")
+file.write(str(data) + '\n')
+file.write("Количество элементов:")
+file.write(str(count) + '\n')
+file.write("Индекс максимального элемента:")
+file.write(str(elements.index(max(elements))) + '\n')
+file.write("Меняем местами первую и последнюю трети:")
+file.write(str(swap))
+print("Данные записаны в файл text_.txt")
+file.close()
 
 
 

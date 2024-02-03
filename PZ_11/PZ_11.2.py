@@ -8,7 +8,6 @@ file18 = open('PZ11/text18-9 (1).txt', 'r')
 text = file18.read()
 print("Содержимое файла 'text18-9.txt':")
 print(text)
-
 lower_case = sum(1 for low in text if low.islower())
 print('\nКоличество букв в нижнем регистре:', lower_case)
 file18.close()
@@ -17,12 +16,9 @@ razdelenie = text.split('\n')
 
 new_file = open('PZ11/new_file1.txt', 'w')
 vvod = input("Введите последнюю строчку (Мы в Бородинский бой.): ")
-if vvod == 'Мы в Бородинский бой.' or vvod == 'Мы в бородинский бой' or vvod == 'мы в бородинский бой' or vvod == 'мы в Бородинский бой':
-    for el in razdelenie[:-1]:
-        new_file.write(el + '\n')
-    new_file.write(vvod)
-else:
-    print("Введите правильную строчку")
+poem = '\n' + text
+poem += '\n' + vvod
+new_file.write(poem)
 new_file.close()
 
 file = open('PZ11/new_file1.txt', 'r')
