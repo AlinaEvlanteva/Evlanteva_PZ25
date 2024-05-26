@@ -6,7 +6,7 @@ import sqlite3 as sq
 with sq.connect('PZ15/curriculum.db') as con:
     cursor = con.cursor()
 
-    # Создаём пустые поля
+
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS Disciplines (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -19,7 +19,7 @@ with sq.connect('PZ15/curriculum.db') as con:
             Reporting_form TEXT
         )
     ''')
-    # Создаём список с нашими данными
+
     discipline = [
         ('0a1', 'Гуманитарная', 'Архитектура', 38, 20, 10, 'Курсовая работа'),
         ('0b2', 'Общественная', 'Социология', 25, 15, 10, 'Эссе'),
@@ -32,14 +32,14 @@ with sq.connect('PZ15/curriculum.db') as con:
         ('0i9', 'Гуманитарная', 'История', 22, 20, 10, 'Эссе'),
         ('j10', 'Прикладная', 'Инженеринг', 25, 15, 15, 'Курсовая работа')
     ]
-    # Подставляем данные в наши поля, после первого запуска кода комментишь
+
     # cursor.executemany('''
     #     INSERT INTO Disciplines (Discipline_code, Name_discipline, Specialization, Lectures, Practical, Laboratory, Reporting_form)
     #     VALUES (?, ?, ?, ?, ?, ?, ?)
     # ''', discipline)
 
 
-# Запросы на вывод данных из нашей таблицы
+
 with sq.connect('PZ15/curriculum.db') as con:
     cursor = con.cursor()
 
@@ -63,7 +63,7 @@ with sq.connect('PZ15/curriculum.db') as con:
     for row in cursor.fetchall():
         print(row)
 
-# Изменяем данные наших позиций
+
 with sq.connect('PZ15/curriculum.db') as con:
     cursor = con.cursor()
 
@@ -75,7 +75,7 @@ with sq.connect('PZ15/curriculum.db') as con:
     for row in cursor.fetchall():
         print(row)
 
-# Удаляем данных наших позиций
+
 with sq.connect('PZ15/curriculum.db') as con:
     cursor = con.cursor()
 
