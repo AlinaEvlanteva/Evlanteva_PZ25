@@ -12,9 +12,6 @@ milk_and_cheese = [store for store in [Magnit, Pyaterochka, Perekrestok] if "м�
 print("Магазины, где можно приобрести одновременно молоко и сыр (Пятерочка и Перекресток):", milk_and_cheese)
 sugar = [store for store in [Magnit, Pyaterochka, Perekrestok] if 'сахар' in store]
 print('Магазины, где можно приобрести сахар ( Магнит и Перекресток):', sugar)
-#for element in [Pyaterochka, Perekrestok]:
-#if 'молоко'in element:
-# #print('Одновременно молоко и сыр присутсвуют в магазинах Пятерочки:', element, end='')
 
 
 
