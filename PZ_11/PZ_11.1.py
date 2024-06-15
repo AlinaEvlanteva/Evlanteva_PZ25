@@ -36,19 +36,3 @@ file.write(str(swap))
 print("Данные записаны в файл text_.txt")
 file.close()
 
-
-
-#elements[:delenie_treti], elements[-delenie_treti:] = elements[-delenie_treti:], elements[:delenie_treti]
-#print('Меняем местами первую и последнюю трети:', elements)
-#swap = elements[0], elements[5] = elements[5], elements[0]
-#delenie_treti = elements
-
-#print(elements)s
-#for el in file:
-    #text = el.split(', ')
-    #print(len(el))
-#print('Количество элементов в текстовом файле:', len(file.read()))
-#max_index = elements.index(max(elements))
-#print('Индекс последнего максимального элемента:', max_index)
-#element = [el for el in data.split(', ')]
-#print(len(element))
