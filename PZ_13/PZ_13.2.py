@@ -20,14 +20,3 @@ print('Среднее арифметическое:', function(matrix))
 
 
 
-#     count = 0
-#     sum = 0
-#     for element in filtered_elements:
-#         count += 1
-#         sum += element
-#     if count > 0:
-#         return sum / count
-#     else:
-#         return 0
-# print("Среднее арифметическое:", function(matrix))
-
