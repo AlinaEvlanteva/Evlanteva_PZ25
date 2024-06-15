@@ -4,7 +4,8 @@
 class Calc:
     def Addition(self, a, b):
         return a + b
-    def Subtraction(self, a, b):        return a - b
+    def Subtraction(self, a, b):
+        return a - b
 
     def Multiplication(self, a, b):
         return a * b
